@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Header og navbar*/
+header{
+    background-color: #797d62;
+
+    padding: 2%;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+#logo{
+    padding-right:25%;
+
+    cursor:pointer;
+}
+
+/* spacing af navbaren */
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+/* styling af to a tags i headeren om ikke skal have drop down */
+nav > a{
+    font-family: cormorant-garamond, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 15pt;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav > a:hover{
+    font-weight: 800;
+}
+
+
+/* Ikoner i venstre side af headeren */
+#navikoner {
+    display: flex;
+    gap: 30px;
+}
+
+.navikon{
+    width: 40px;
+    height: 40px;
+
+    cursor:pointer;
+}
+
+
+
+/* dropdown styling i navbaren */
+.dropbtn {
+    background-color: transparent;
+    font-family: cormorant-garamond, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 15pt;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: none;
+  }
+  
+  /* display none, da content i dropdown skal være gemt væk når man ikke hover over det */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+
+    background-color: #797d62;
+    font-family: cormorant-garamond, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    font-size: 13pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+
+    min-width: 110px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.075);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* dropdown hover  */
+
+  /* skift af baggrundfarve og font weight når man over */
+  .dropdown-content a:hover {
+      background-color: #9b9b7a;
+      font-weight: 800;
+    }
+  /* display bliver ændret til blok, for at vise content når man hover */
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
