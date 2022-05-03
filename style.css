@@ -142,6 +142,28 @@ nav > a:hover{
     height: 50px;
 }
 
+
+/* Forside */
+
+#heroforside{
+    background-image: url("img-desktop/forsideherobillede.jpg");
+    background-repeat: no-repeat; 
+    height: 700px; 
+    background-size: cover;
+}
+h1{
+    font-family: cormorant-garamond, serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 70px;
+    text-transform: uppercase;
+
+    padding: 15%;
+    text-align: center;
+}
+
+
+
                                                         /* footer */
 
 
