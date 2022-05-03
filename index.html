@@ -13,8 +13,10 @@
 </head>
 <body>
 <header>
+    <!-- Burgermennu -->
     <a id="mobilemenubutton" href="menu.html"> <img src="img-mobile/burgermenu.svg" alt="Burger Menu"> </a>
 
+    <!-- Desktopmenu -->
     <nav id="desktopmenu">
         <a href="howto">How To</a>
 
@@ -44,8 +46,10 @@
           </div>
     </nav>
 
+    <!-- logo -->
     <a id="logo" href="index.html"><img src="img-desktop/jumbo_logo_hvid.png" alt="Jumbo Bakery logo"></a>
 
+    <!-- Headerens ikoner -->
     <div id="navikoner">
         <img id="searchnavikon" src="img-desktop/search.svg" alt="Søg ikon">
         <img id="loginnavikon" src="img-desktop/login.svg" alt="login ikon">
@@ -54,10 +58,74 @@
 </header>
 
 <main>
-    <section id="heroforside">
-        <h1>Velkommen til Jumbo Bakery & Eatery</h1>
+    <!-- Hero sektion -->
+    <section>
+        <img id="heroforside" src="img-desktop/forsideherobillede.jpg" alt="Forsidebillede af Jumbo Ankersgade">
+        <h1 id="heroforsidetekst">Velkommen til Jumbo Bakery & Eatery</h1>
+    </section>
+
+    <!-- Vores historie teaser -->
+    <section id="historieteaser">
+        <h2 id="historieteaserh2"> Vores historie</h2>
+        <p>
+            Hjertet i Jumbo er surdejs bagværk. I det hele taget er det passion for god kvalitet, 
+            sæsonbaserede økologiske råvarer og smagfulde madoplevelser, der driver værket.
+            Hos Jumbo sætter vi en ære i vores håndværk, både i bageriet og omkring den kaffe vi serverer, 
+            og vi er stolte af at sige, at vi laver alting fra bunden.
+        </p>
+        <img src="img-desktop/pilned.svg" alt="Ned til næste sektion pil">
     </section>
     
+    <!-- Nyheder forsiden -->
+    <section class="tokolonner"> 
+
+        <!-- Jeg har valgt at lægge billedet i en div for at få simplere kode med flexbox i CSS: -->
+        <div id="nyhedforsidebillede">
+            <img src="img-desktop/rarbabarforsidedesktop.jpg" alt="Rababer spandauer">
+        </div>
+    
+        <div id="nyhedforsidetekst">
+            <div><!--Den her div skal bruges til at være i midten af section'en.-->
+                <h2>Nyheder</h2>
+                <p>
+                Sommeren står for døren, og derfor er det tid til vores største sommerfavorit. 
+                Rababer spandaueren er nu på menuen. Spandaueren er fyldt med hele rabarbere, rabarber- og marcipancreme.
+                </p>
+                <button class="lyserøddknap">Se mere</button>
+            </div>
+        </div>
+    
+    </section>
+
+  
+    <!-- Forside cards -->
+    <section id="forsidecards">
+        <img src="img-desktop/citron.jpg" alt="Citroner i lage">
+        <a href="produkter.html" style="text-decoration: none;"> <img src="img-desktop/produkter-gul-kasse.jpg" alt="Produkt kasse"></a>
+        <img src="img-desktop/tarte-citron-spist.jpg" alt="Citron tærte">
+        <a href="howto.html"><img src="img-desktop/howto-gul-kasse.jpg" alt="How To kasse"></a>
+        <img src="img-desktop/spandauer.jpg" alt="Spandauer med citron">
+        <a href="galleri.html"><img src="img-desktop/galleri-hvid-kasse.jpg" alt="Galleri kasse"></a>
+    </section>
+
+    <!-- Medlemsskab sektion-->
+    <section class="tokolonnermedlem"> 
+        
+        <div id="medlemforsidetekst">
+            <div>
+                <h2>Medlemsfordele</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste mollitia perferendis non delectus voluptatum hic laudantium facere quidem id pariatur.
+                </p>
+                <button class="grønknap">Bliv Medlem</button>
+            </div>
+        </div>
+    
+        <div id="medlemforsidebillede">
+            <img src="img-desktop/klippekort.png" alt="Klippekort på mobil">
+        </div>
+    
+    </section>
 </main>
 
 <footer>
