@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Jumbo Bakeryp & Eatery</title>
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.typekit.net/jdf6xlg.css">
-
+    
 </head>
 <body>
 <header>
-    
-    <nav>
+    <a id="mobilemenubutton" href="menu.html"> <img src="img-mobile/burgermenu.svg" alt="Burger Menu"> </a>
+
+    <nav id="desktopmenu">
         <a href="howto">How To</a>
 
-        <!-- <a href="historie">Historie</a> -->
         <div class="dropdown">
             <button class="dropbtn">Historie</button>
             <div class="dropdown-content">
@@ -25,7 +27,6 @@
 
         <a href="galleri">Galleri</a>
 
-        <!-- <a href="produkter">Produkter</a> -->
         <div class="dropdown">
             <button class="dropbtn">Produkter</button>
             <div class="dropdown-content">
@@ -33,7 +34,6 @@
             </div>
           </div>
 
-        <!-- <a href="omos">Om os</a> -->
         <div class="dropdown">
             <button class="dropbtn">Om Os</button>
             <div class="dropdown-content">
@@ -44,15 +44,86 @@
           </div>
     </nav>
 
-    <a id="logo" href="index.html"><img src="img-desktop/jumbo_logo_hvid_2.png" salt="Jumbo Bakery logo"></a>
+    <a id="logo" href="index.html"><img src="img-desktop/jumbo_logo_hvid.png" alt="Jumbo Bakery logo"></a>
 
     <div id="navikoner">
-        <img class="navikon" src="img-desktop/search.svg">
-        <img class="navikon" src="img-desktop/login.svg">
-        <img class="navikon" src="img-desktop/shopping_bag.svg">
+        <img id="searchnavikon" src="img-desktop/search.svg">
+        <img id="loginnavikon" src="img-desktop/login.svg">
+        <img id="shoppingnavikon" src="img-desktop/shopping_bag.svg">
+    </div>
+</header>
+
+<main>
+    <section>
+        <img src="" alt="Forside billede af Jumbo Ankersgade">
+        <h1>Velkommen til Jumbo Bakery & Eatery</h1>
+    </section>
+</main>
+
+<footer>
+
+    <div class="up">
+       <h6>Jumbo, Mindet</h6>
+        <p>
+        <a href="https://goo.gl/maps/amgDQCaPEyqtKdEY8">
+        Mindet 4,<br>
+        8000 Aarhus C</p>
+        </a>
+        
+        
+        <h6>åbningstider</h6>
+        <p>
+        Man-Fre: 07:30 - 17:00 <br>
+        Lør-Søn: 08:00 - 17:00 <br>
+        <a href="tel:53849878">TLF: 53 84 98 78</a>
+        </p>
     </div>
 
-</header>
+    <div class="up">
+        <h6>Jumbo, Ankersgade</h6>
+        <p>
+        <a href="https://goo.gl/maps/ew4C2JvBqmzPx2Tu6">
+        Ankersgade 12b,<br>
+        8000 Aarhus C<br>
+        </p>
+        </a>
+        
+        <h6>åbningstider</h6>
+        <p>
+        Man-Søn: 08:00 - 17:00
+        </p>
+    </div>
+
+    <div class="down">
+        <h6>Kontakt</h6>
+        <p>
+        <a href="mailto:hallo@jumboaarhus.com">hallo@jumboaarhus.com</a><br>
+        <a href="mailto:job@jumboaarhus.com">job@jumboaarhus.com</a>
+        </p>
+    </div>
+
+    <div class="down">
+        <h6>Følg Os</h6>
+        <p>
+        <a href="https://www.instagram.com/jumbo_aarhus/?hl=en" target="_blank"> 
+        Instagram, Mindet 
+        </a> 
+        <br>
+        <a href="https://www.instagram.com/jumbo_ankersgade/?hl=en" target="_blank">
+        Instagram, Ankersgade 
+        </a> 
+        <br>
+        <a href="https://www.facebook.com/jumboaarhus/" target="_blank">
+        Facebook
+        </a>
+        </p>
+
+        <h6>Smileyrapport</h6>
+        <a href="https://www.findsmiley.dk/947500">
+        <img src="img-desktop/smiley.svg" alt="Smileyrapport">
+        </a>
+    </div>
+</footer>
 
 </body>
 </html>

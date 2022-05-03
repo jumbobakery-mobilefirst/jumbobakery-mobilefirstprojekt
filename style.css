@@ -4,7 +4,7 @@
 }
 
 
-/*Header og navbar*/
+                                                    /*Header og navbar*/
 header{
     background-color: #797d62;
 
@@ -16,12 +16,6 @@ header{
     justify-content: space-between;
     align-items: center;
   
-}
-
-#logo{
-    padding-right:25%;
-
-    cursor:pointer;
 }
 
 /* spacing af navbaren */
@@ -52,13 +46,10 @@ nav > a:hover{
     gap: 30px;
 }
 
-.navikon{
+#searchnavikon, #loginnavikon, #shoppingnavikon {
     width: 40px;
     height: 40px;
-
-    cursor:pointer;
 }
-
 
 
 /* dropdown styling i navbaren */
@@ -113,4 +104,161 @@ nav > a:hover{
   .dropdown:hover .dropdown-content {
       display: block;
     }
-  
+
+                                                    /* Burger menu */
+
+#burgermenubody{
+    background-color: #797d62;
+    color: white;
+}
+
+#burgermenu{
+    display:flex;
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    padding: 30%;
+}
+
+#burgermenunavnikoner{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.burgermennunavikon{
+    width: 40px;
+    height: 40px;
+}
+
+#burgermenuexit > img{
+    width: 40px;
+    height: 40px;
+    padding: 6%;
+}
+
+#mobilemenubutton{
+    width: 50px;
+    height: 50px;
+}
+
+                                                        /* footer */
+
+
+h6{
+    font-family: montserrat, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 10pt;
+    text-transform: uppercase;
+    color: white;
+}
+
+footer{
+    padding-top:50px;
+    min-height:300px;
+    width:100%;
+
+    background-color:#797d62;
+    text-align:left;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items:stretch;
+}
+
+
+
+footer > div >p{
+    margin-top:20px;
+    margin-bottom:20px;
+
+    color: #f7f8f6;
+    text-align: center;
+    text-align: left;
+    line-height: 30px;
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 10pt;
+}
+
+
+footer > div > p > a{
+    text-decoration: none;
+    color: #f7f8f6;
+}
+
+footer > div > p > a:hover{
+    font-weight: 300;
+}
+
+
+footer > div > a > img{
+    padding-top: 10px;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+                                                            /*Media Qoury*/ 
+
+@media only screen and (min-width:769px){
+    /* header */
+   #mobilemenubutton{
+       display: none;
+   }
+
+   #logo{
+        padding-right:25%;
+        cursor:pointer;
+    }
+}
+
+@media only screen and (max-width:769px){
+    /* header */
+    #desktopmenu{
+        display: none;
+    }
+
+    #logo{
+        padding-left: 15%;
+    }
+
+    /* footer */
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media only screen and (max-width:520px){
+    /* header */
+    div >#searchnavikon{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:375px){
+    /* header */
+    #mobilemenubutton {
+        width: 40px;
+        height: 40px;
+    }
+
+    #navikoner{
+        gap:10px;
+    }
+}
+
+@media only screen and (min-width:320px){
+    /* header */
+    #mobilemenubutton {
+        width: 30px;
+        height: 30px;
+    }
+
+    #navikoner{
+        gap:5px;
+    }
+}
