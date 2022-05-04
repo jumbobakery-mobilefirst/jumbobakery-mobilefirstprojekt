@@ -234,7 +234,13 @@ p{
 
 #forsidecards{
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     flex-wrap: wrap;
+}
+
+#forsidecards > img{
+    width: 33%;
 }
 
 
@@ -294,11 +300,180 @@ p{
 }
 
 
+                                                        /* Historiesiden */
+
+/*Billede på siden historie*/
+#billede-historie{ 
+    background-image: url("img-desktop/broed1.jpg");
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ /*Billede på siden historie*/
+ #billede-historie >div{
+   
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30pt;
+    letter-spacing: 2px;
+    color: #ffff;
+    
+ }
 
 
 
 
+ section.historie>div {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color:  #9b9b7a;
+   
+  }
+  
+  section.historie>div>h3{
+    padding-left: 300px; 
+    padding-right: 300px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    padding-bottom: 8pt;
+    font-size: 30px;
+    color: #ffff;
+  }
+  
 
+  section.historie > div > p{
+    padding-left: 100px; 
+    padding-right: 100px;
+    font-size: 13px;
+    color:#ffff;
+    letter-spacing: 1px;
+    line-height: 30px;
+    text-align: center;
+} 
+
+                                                    /* How to underside */
+
+
+/*hero*/
+section#overskriftopskrift{
+    width:100%;
+    height:600px;
+    background-image:url("img-desktop/howtobaggrund.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+section#overskriftopskrift > div >h1{
+margin-top: 40%;
+font-family: cormorant-garamond, serif;
+font-weight: 400;
+font-style: normal;
+color: black;
+font-size:600% 
+}
+
+
+/* How to CARDS*/
+
+#howto{
+display: flex;
+flex-direction: row;
+}
+
+#howto > section.opskrifter > div{
+    display: flex;
+    width: 100%;
+    padding-top:25px;
+
+}
+
+#howto> section.opskrifter> h3{
+    margin-top: 80px;
+    font-family: cormorant-garamond, serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    color: black;
+}
+
+#howto > section > div > div.ingredienser > ul{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#howto > section > div > div.ingredienser > h4{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+#howto > section > div > div.fremgang{
+    padding-left: 10%;
+
+}
+#howto > section > div > div.fremgang > h4{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#howto > section > div > div.ingredienser >  a{
+    padding-left: 35%;
+    color: black;
+}
+
+#howto > section > div > div.ingredienser >ul {
+    text-align: left;
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+}
+
+#howto > section > h3{
+    font-family: cormorant-garamond, serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    text-align: center;
+}
+
+#howto > section > div > div.fremgang > p{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: cormorant-garamond, serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    padding-top: 15%;
+    padding-bottom: 5%;
+}
+#howto > section > div > div.fremgang > ul > li{
+    text-align: left;
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#howto > section > div > div.fremgang > ol > li{
+    text-align: left;
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: black;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 
                                                         /* footer */
@@ -427,6 +602,12 @@ footer > div > a > img{
         transform: translate(-50%, -200%);
     }
 
+    /* cards forsiden */
+
+    #forsidecards > img{
+        width: 50%;
+    }
+
     /* gallerisiden */
     .galleri-cards{
         display: flex;
@@ -443,6 +624,38 @@ footer > div > a > img{
 
     h1{
         font-size: 20pt;
+    }
+
+    /* Historiesiden  */
+    section.historie>div>p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 90px;
+        padding-right: 90px;
+        color: #ffff;
+    }
+    section.historie>div>h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        color: #ffff;
+    }
+
+    #billede-historie{ 
+        height: 40vh;
+    }
+
+    #billede-historie > div {
+        font-size: 20pt;
+    }
+
+    /* how to underside */
+    #howto {
+        display: flex;
+        flex-direction: column;
     }
 }
 
