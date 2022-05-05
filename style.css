@@ -167,7 +167,7 @@ nav > a:hover{
     
 }
                                             /* vores historie teaser på forsiden */
-#historieteaser{
+.historieteaser{
     text-align: center;
     padding:10% 15%;
 }
@@ -495,16 +495,16 @@ section#overskriftopskrift > div > p {
 
 
 /* produkter */
-#produktbilleder{
+.produktbilleder{
     display: flex;
 }
 
-#produktbilleder > div{
+.produktbilleder > div{
     display: flex;
 }
 
 
-#produktlillebilleder{
+.produktlillebilleder{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -610,7 +610,7 @@ footer > div > p > a:hover{
 
 
     /* historie teaser forside */
-    #historieteaserh2{
+    .historieteaserh2{
         font-size: 20px;
     }
 
