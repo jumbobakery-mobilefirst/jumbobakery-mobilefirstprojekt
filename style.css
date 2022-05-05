@@ -3,6 +3,9 @@
     padding: 0;
 }
 
+.whitetext{
+    color: white;
+}
 
                                                     /*Header og navbar*/
 header{
@@ -288,7 +291,7 @@ p{
     background-color:#fdfaf8;
 }
 #gallerimaincontent > h1 {
-    margin: 5%;
+    padding: 5%;
 }
                                                         /* Historiesiden */
 
@@ -482,10 +485,11 @@ section#overskriftopskrift > div > p {
 
  #heroprodukt > div > p{
     text-align: center;
-    font-size: 16pt;
+    font-size: 14pt;
     letter-spacing: 2px;
     color: black;
-    padding: 2% 14%;
+    padding: 4% 14%;
+    font-weight: 300;
  }
  
  #heroprodukt > div > img{
@@ -622,19 +626,19 @@ footer > div > p > a:hover{
 
     /* produkter */
 
-    #produktbilleder {
+    .produktbilleder {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #produktbilleder > div {
+    .produktbilleder > div {
         display: flex;
         justify-content: center;
     }
   
   
-    #produktstorbillede > img{
+    .produktstorbillede > img{
         width: 100%;
         height: auto;
     }
